@@ -21,7 +21,7 @@
         public IDbSet<Comment> Comments { get; set; }
 
         public IDbSet<Tag> Tags { get; set; }
-
+        
         public static BlogSystemDbContext Create()
         {
             return new BlogSystemDbContext();

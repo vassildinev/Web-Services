@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogSystem.Common", "BlogSy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogSystem.Web.Wcf", "Web\BlogSystem.Web.Wcf\BlogSystem.Web.Wcf.csproj", "{F47065B9-A803-4183-99F7-AE740B8183E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogSystem.Web.Api.IntegrationTests", "Tests\BlogSystem.Web.Api.IntegrationTests\BlogSystem.Web.Api.IntegrationTests.csproj", "{47BF37C0-0040-4FBB-9427-D2E2D5F1B81C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{F47065B9-A803-4183-99F7-AE740B8183E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F47065B9-A803-4183-99F7-AE740B8183E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F47065B9-A803-4183-99F7-AE740B8183E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47BF37C0-0040-4FBB-9427-D2E2D5F1B81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47BF37C0-0040-4FBB-9427-D2E2D5F1B81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47BF37C0-0040-4FBB-9427-D2E2D5F1B81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47BF37C0-0040-4FBB-9427-D2E2D5F1B81C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,5 +83,6 @@ Global
 		{766B2A3A-02B9-4645-B906-02BF24908923} = {F507249D-98EB-4110-89A9-E9B6EF0F7268}
 		{00F38B8E-349B-42B7-99DF-E0AE4B690093} = {F507249D-98EB-4110-89A9-E9B6EF0F7268}
 		{F47065B9-A803-4183-99F7-AE740B8183E7} = {F507249D-98EB-4110-89A9-E9B6EF0F7268}
+		{47BF37C0-0040-4FBB-9427-D2E2D5F1B81C} = {CD6FAB38-FB85-4D13-B7AF-008DA87CC5C6}
 	EndGlobalSection
 EndGlobal
