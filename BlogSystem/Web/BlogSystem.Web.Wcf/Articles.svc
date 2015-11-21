@@ -1,0 +1,5 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="BlogSystem.Web.Wcf.Articles" 
+    CodeBehind="Articles.svc.cs" %>
