@@ -4,31 +4,33 @@
     using System.ServiceModel;
     using System.ServiceModel.Web;
 
-    using Data.Models;
-    using Data.Repositories;
-    using Models;
+    using AutoMapper.QueryableExtensions;
+    using DataTransferModels;
+    using Services.Data.Contracts;
 
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
     public class Articles : IArticles
     {
-        private readonly IRepository<Article> articles;
+        private readonly IArticlesService articles;
 
-        public Articles()
+        public Articles(IArticlesService articles)
         {
-            this.articles = new GenericRepository<Article>();
+            this.articles = articles;
         }
 
-        public IQueryable<ArticleModel> GetArticles()
+        public IQueryable<ArticleTransferModel> GetArticles()
         {
             this.SetCorrectContentType();
 
             return this.articles
-                .All()
-                .Select(a => new ArticleModel
-                {
-                    Title = a.Title,
-                    Content = a.Content
-                });
+                .GetSortedArticles()
+                .ProjectTo<ArticleTransferModel>();
+        }
+
+        public ArticleTransferModel AddNew(ArticleTransferModel model)
+        {
+            this.SetCorrectContentType();
+            return model;
         }
 
         private void SetCorrectContentType()
@@ -37,7 +39,7 @@
             WebMessageFormat responseFormat = WebMessageFormat.Xml;
             if (!string.IsNullOrEmpty(operationCtx.IncomingRequest.ContentType))
             {
-                if(operationCtx.IncomingRequest.ContentType.EndsWith("/json"))
+                if (operationCtx.IncomingRequest.ContentType.EndsWith("/json"))
                 {
                     responseFormat = WebMessageFormat.Json;
                 }

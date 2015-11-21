@@ -1,4 +1,4 @@
-﻿namespace BlogSystem.Web.Api
+﻿namespace BlogSystem.Web.Wcf.Configurations
 {
     using System;
     using System.Collections.Generic;

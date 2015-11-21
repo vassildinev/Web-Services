@@ -8,12 +8,7 @@
     {
         private readonly IBlogSystemDbContext context;
         private readonly IDbSet<TEntity> set;
-
-        public GenericRepository()
-            : this(new BlogSystemDbContext())
-        {
-        }
-
+        
         public GenericRepository(IBlogSystemDbContext context)
         {
             this.context = context;

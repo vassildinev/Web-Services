@@ -41,6 +41,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -50,7 +54,25 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Conventions, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Ninject.Extensions.Conventions.3.2.0.0\lib\net45-full\Ninject.Extensions.Conventions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Extensions.Wcf, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Ninject.Extensions.Wcf.3.2.2.0\lib\net45-full\Ninject.Extensions.Wcf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.ServiceModel.Activation" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -71,9 +93,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Articles.svc" />
+    <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations\AutoMapperConfig.cs" />
+    <Compile Include="Configurations\NinjectDependencyResolver.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Models\ArticleModel.cs" />
     <Compile Include="Articles.svc.cs">
       <DependentUpon>Articles.svc</DependentUpon>
@@ -82,6 +110,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\BlogSystem.Common\BlogSystem.Common.csproj">
+      <Project>{79c14798-f55a-45c3-8eef-30a7366a86a1}</Project>
+      <Name>BlogSystem.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Data\BlogSystem.Data.Models\BlogSystem.Data.Models.csproj">
       <Project>{746677ae-c060-4126-80e4-c0ccd7a160b9}</Project>
       <Name>BlogSystem.Data.Models</Name>
@@ -89,6 +121,18 @@
     <ProjectReference Include="..\..\Data\BlogSystem.Data\BlogSystem.Data.csproj">
       <Project>{fed8b172-c143-4cae-ba8e-2cb48df3b070}</Project>
       <Name>BlogSystem.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\BlogSystem.Services.Data\BlogSystem.Services.Data.csproj">
+      <Project>{d2a67c17-c25f-4a29-923c-14c106f746d0}</Project>
+      <Name>BlogSystem.Services.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlogSystem.Web.DataTransferModels\BlogSystem.Web.DataTransferModels.csproj">
+      <Project>{766b2a3a-02b9-4645-b906-02bf24908923}</Project>
+      <Name>BlogSystem.Web.DataTransferModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlogSystem.Web.Infrastructure\BlogSystem.Web.Infrastructure.csproj">
+      <Project>{00f38b8e-349b-42b7-99df-e0ae4b690093}</Project>
+      <Name>BlogSystem.Web.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

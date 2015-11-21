@@ -2,9 +2,9 @@
 {
     using System.Linq;
     using System.ServiceModel;
-
-    using Models;
     using System.ServiceModel.Web;
+
+    using DataTransferModels;
 
     [ServiceContract]
     public interface IArticles
@@ -13,6 +13,13 @@
         [WebInvoke(
             Method = "GET",
             UriTemplate = "/articles")]
-        IQueryable<ArticleModel> GetArticles();
+        IQueryable<ArticleTransferModel> GetArticles();
+
+        [OperationContract]
+        [WebInvoke(
+            Method = "POST",
+            UriTemplate = "/articles",
+            RequestFormat = WebMessageFormat.Json)]
+        ArticleTransferModel AddNew(ArticleTransferModel model);
     }
 }

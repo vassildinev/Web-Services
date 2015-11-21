@@ -50,6 +50,7 @@
                 Title = request.Title,
                 Content = request.Content,
                 DateCreated = request.DateCreated,
+                CategoryId = 0,
                 Tags = new HashSet<Tag>()
             };
 

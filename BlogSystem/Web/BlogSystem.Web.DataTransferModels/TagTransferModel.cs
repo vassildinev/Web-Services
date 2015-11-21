@@ -9,6 +9,8 @@
     public class TagTransferModel :
         IMapFrom<Tag>, IHaveCustomMappings
     {
+        public string Name { get; set; }
+
         public void CreateMappings(IConfiguration configuration)
         {
         }
