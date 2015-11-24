@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5A621A09-7520-4D8A-A003-ABBD1DC9687A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{DBBAE3BC-8885-4B7D-A2F2-879B1DF0E43F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{41FB1FD5-2070-44DC-BAFA-B0E62D37DA45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{065BE4D4-5286-43E2-8605-E11F0DF3311C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLoggingSystem.Models", "BugLoggingSystem.Models\BugLoggingSystem.Models.csproj", "{B8B04D5C-CE54-41AF-A872-15D80BFE70F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLoggingSystem.Data", "BugLoggingSystem.Data\BugLoggingSystem.Data.csproj", "{7E28CF4B-D1BE-41DB-BD54-E23D4FBC108E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLoggingSystem.Services", "BugLoggingSystem.Services\BugLoggingSystem.Services.csproj", "{5E4E58D4-C863-4C20-A3D4-378BE0FFE717}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{112F7C02-D98D-4718-B91F-E56BAB9E70F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLoggingSystem.ConsoleClient", "BugsLoggingSystem.ConsoleClient\BugLoggingSystem.ConsoleClient.csproj", "{BD9F510F-0DA8-4BC3-8903-547067E2A774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLoggingSystem.Data.Tests", "BugLoggingSystem.Data.Tests\BugLoggingSystem.Data.Tests.csproj", "{2783A885-BFAC-4C7F-9CCD-DE1CD7DBF6D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLoggingSystem.Services.Tests", "BugLoggingSystem.Services.Tests\BugLoggingSystem.Services.Tests.csproj", "{C3AE7E30-B206-4FDC-A4E8-50B5B5612038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLoggingSystem.Api", "BugLoggingSystem.Api\BugLoggingSystem.Api.csproj", "{8E6CE7AD-7CB0-4AE8-9BAA-F44441C7EEDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugLoggingSystem.Api.IntegrationTests", "BugLoggingSystem.Api.IntegrationTests\BugLoggingSystem.Api.IntegrationTests.csproj", "{78B0B095-F305-45EB-B133-87D94D79DA53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8B04D5C-CE54-41AF-A872-15D80BFE70F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8B04D5C-CE54-41AF-A872-15D80BFE70F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8B04D5C-CE54-41AF-A872-15D80BFE70F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8B04D5C-CE54-41AF-A872-15D80BFE70F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E28CF4B-D1BE-41DB-BD54-E23D4FBC108E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E28CF4B-D1BE-41DB-BD54-E23D4FBC108E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E28CF4B-D1BE-41DB-BD54-E23D4FBC108E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E28CF4B-D1BE-41DB-BD54-E23D4FBC108E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4E58D4-C863-4C20-A3D4-378BE0FFE717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4E58D4-C863-4C20-A3D4-378BE0FFE717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4E58D4-C863-4C20-A3D4-378BE0FFE717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4E58D4-C863-4C20-A3D4-378BE0FFE717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD9F510F-0DA8-4BC3-8903-547067E2A774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD9F510F-0DA8-4BC3-8903-547067E2A774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD9F510F-0DA8-4BC3-8903-547067E2A774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD9F510F-0DA8-4BC3-8903-547067E2A774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2783A885-BFAC-4C7F-9CCD-DE1CD7DBF6D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2783A885-BFAC-4C7F-9CCD-DE1CD7DBF6D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2783A885-BFAC-4C7F-9CCD-DE1CD7DBF6D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2783A885-BFAC-4C7F-9CCD-DE1CD7DBF6D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3AE7E30-B206-4FDC-A4E8-50B5B5612038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3AE7E30-B206-4FDC-A4E8-50B5B5612038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3AE7E30-B206-4FDC-A4E8-50B5B5612038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3AE7E30-B206-4FDC-A4E8-50B5B5612038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6CE7AD-7CB0-4AE8-9BAA-F44441C7EEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6CE7AD-7CB0-4AE8-9BAA-F44441C7EEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6CE7AD-7CB0-4AE8-9BAA-F44441C7EEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6CE7AD-7CB0-4AE8-9BAA-F44441C7EEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B0B095-F305-45EB-B133-87D94D79DA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B0B095-F305-45EB-B133-87D94D79DA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B0B095-F305-45EB-B133-87D94D79DA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B0B095-F305-45EB-B133-87D94D79DA53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8B04D5C-CE54-41AF-A872-15D80BFE70F4} = {5A621A09-7520-4D8A-A003-ABBD1DC9687A}
+		{7E28CF4B-D1BE-41DB-BD54-E23D4FBC108E} = {5A621A09-7520-4D8A-A003-ABBD1DC9687A}
+		{5E4E58D4-C863-4C20-A3D4-378BE0FFE717} = {DBBAE3BC-8885-4B7D-A2F2-879B1DF0E43F}
+		{BD9F510F-0DA8-4BC3-8903-547067E2A774} = {112F7C02-D98D-4718-B91F-E56BAB9E70F9}
+		{2783A885-BFAC-4C7F-9CCD-DE1CD7DBF6D5} = {065BE4D4-5286-43E2-8605-E11F0DF3311C}
+		{C3AE7E30-B206-4FDC-A4E8-50B5B5612038} = {065BE4D4-5286-43E2-8605-E11F0DF3311C}
+		{8E6CE7AD-7CB0-4AE8-9BAA-F44441C7EEDE} = {41FB1FD5-2070-44DC-BAFA-B0E62D37DA45}
+		{78B0B095-F305-45EB-B133-87D94D79DA53} = {065BE4D4-5286-43E2-8605-E11F0DF3311C}
+	EndGlobalSection
+EndGlobal
