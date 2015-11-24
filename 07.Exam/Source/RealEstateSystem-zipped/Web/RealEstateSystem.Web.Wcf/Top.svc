@@ -1,0 +1,6 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="RealEstateSystem.Web.Wcf.Top" 
+    CodeBehind="Top.svc.cs"
+    Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory" %>
